@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/imick-io/node-ts-decorators/issues"
   },
-  "homepage": "https://github.com/imick-io/node-ts-decorators#readme"
+  "homepage": "https://github.com/imick-io/node-ts-decorators#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }
