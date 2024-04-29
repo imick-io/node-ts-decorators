@@ -1,0 +1,19 @@
+{
+  "name": "nodetsdecorators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imick-io/node-ts-decorators.git"
+  },
+  "author": "iMick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imick-io/node-ts-decorators/issues"
+  },
+  "homepage": "https://github.com/imick-io/node-ts-decorators#readme"
+}
