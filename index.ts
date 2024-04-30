@@ -1,3 +1,5 @@
+import { timing, logTimings, important } from "./perfDecorators";
+
 const delay = <T>(time: number, data: T): Promise<T> =>
   new Promise((resolve) =>
     setTimeout(() => {
@@ -5,11 +7,15 @@ const delay = <T>(time: number, data: T): Promise<T> =>
     }, time)
   );
 
+@logTimings
 class Users {
+  @timing()
   async getUsers() {
     return await delay(1000, []);
   }
-  async getUser(id: number) {
+
+  @timing()
+  async getUser(@important id: number) {
     return await delay(50, {
       id: `user:${id}`,
     });
@@ -25,4 +31,7 @@ class Users {
   await users.getUser(42);
 
   await users.getUsers();
+
+  // @ts-ignore
+  users?.printTimings();
 })();
